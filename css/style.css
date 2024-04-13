@@ -20,6 +20,8 @@ body {
     width: 100%;
     height: auto;
     display: flex;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .sidebar {
@@ -40,11 +42,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-.logo-img{
-    width: 100px;
-    border-radius: 10px;
-    margin-left: 1.5rem;
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
 }
+
 .sidebar-menu a, .logout-sidebar a {
     padding: 5% 8%;
     margin: 0.5rem 0;

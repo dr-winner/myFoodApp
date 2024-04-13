@@ -1,13 +1,11 @@
-// showing the navbar when click menu on mobile
 const mobile = document.querySelector('.menu-toggle');
 const mobileLink = document.querySelector('.sidebar');
 
 mobile.addEventListener("click", function(){
     mobile.classList.toggle("is-active");
     mobileLink.classList.toggle("active");
-
-    const menuBars = document.querySelector(".is-active");
-    if(window.innerWidth <= 768 && menuBars){
+    
+    if(window.innerWidth <= 768 && mobile.classList.contains("is-active")){
         mobile.classList.toggle("is-active");
         mobileLink.classList.toggle("active");
     }    
